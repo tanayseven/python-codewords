@@ -7,13 +7,17 @@
 <body>
 <div id="impress">
 
-  <div id="title" class="step slide" data-x="-1000" data-y="-1500">
+  <div id="1" class="step" data-x="1500" data-y="0" data-z="10000">
+
+  </div>
+
+  <div id="title-slide" class="step slide" data-x="0" data-y="0" data-z="0">
     <h2>Learn Python by developing an application with TDD</h2>
     <h3>Using Python Unit Testing Framework</h3>
     <img src="res/Python_molurus_molurus_2.jpg">
-  </div>s
+  </div>
 
-  <div id="agenda" class="step slide" data-x="0" data-y="-1500">
+  <div id="agenda" class="step slide" data-x="500" data-y="0" data-z="-500" data-rotate-y="90">
     <h1>Things we will be doing today</h1>
     <ol>
       <li>A very short introduction to Python</li>
@@ -24,13 +28,13 @@
     </ol>
   </div>
 
-  <div id="invented-by" class="step slide" data-x="1000" data-y="-1500">
+  <div id="invented-by" class="step slide" data-x="0" data-y="0" data-z="-1000" data-rotate-y="180">
     <h1>Python was Invented by</h1>
     <p id="guido-name">Guido van Rossum</p>
     <img id="guido-image" src="res/guidovanrossum.jpg">
   </div>
 
-  <div id="snake-slide" class="step slide" data-x="2000" data-y="-1500">
+  <div id="snake-slide" class="step slide" data-x="-500" data-y="0" data-z="-500" data-rotate-y="270">
     <h1>The name Python was inspired by</h1>
     <h5 id="title-not-the-snake">Not the snake</h5>
     <video id="snake-video" width="320" height="240" loop>
@@ -40,7 +44,7 @@
     <img id="monty-image" src="res/Flyingcircus_2.jpg">
   </div>
 
-  <div class="step slide" data-x="3000" data-y="-1500">
+  <div class="step slide" data-x="0" data-y="-400" data-z="-500" data-rotate-x="90" data-rotate-z="90">
     <h1>And the Cheese Shop</h1>
     <h5>a. k. a. PyPI (Python Package Index)</h5>
     <img src="res/cheeseshop.jpg">
@@ -57,7 +61,7 @@
     </div>
   </div>
 
-  <div class="step slide" data-x="4000" data-y="-1500">
+  <div class="step slide" data-x="0" data-y="400" data-z="-500" data-rotate-x="270" data-rotate-z="90">
     <h1>What is Python?</h1>
     <h5>Python is..</h5>
     <div class="split-page">
@@ -82,7 +86,7 @@
     <a class="micro-link" href="https://www.python.org/doc/essays/blurb/">Reference for this slide</a>
   </div>
 
-  <div class="step slide" data-x="5000" data-y="-1500">
+  <div class="step slide" data-x="3000" data-y="0" data-z="0">
     <h1>Python is used by</h1>
     <div class="split-page">
       <ol>
@@ -109,7 +113,7 @@
     <a class="micro-link" href="https://wiki.python.org/moin/OrganizationsUsingPython">Reference for this slide</a>
   </div>
 
-  <div class="step slide" data-x="6000" data-y="-1500">
+  <div class="step slide" data-x="3500" data-y="0" data-z="-500" data-rotate-y="90">
     <h1>Python is used for</h1>
     <div>
       <ol>
@@ -125,7 +129,7 @@
     <a class="micro-link" href="https://www.python.org/about/apps/">Reference for this slide</a>
   </div>
 
-  <div class="step slide" data-x="7000" data-y="-1500">
+  <div class="step slide" data-x="3000" data-y="0" data-z="-1000" data-rotate-y="180">
     <h1>Python Philosophy</h1>
     <code id="python-philosophy">
       >>> import this<br>
@@ -153,7 +157,7 @@
     </code>
   </div>
 
-  <div class="step slide" data-x="8000" data-y="-1500">
+  <div class="step slide" data-x="2500" data-y="0" data-z="-500" data-rotate-y="270">
     <h1>Hello World!</h1>
     <div class="split-page">
       <h5 id="title-for-java">For Java</h5>
@@ -172,86 +176,86 @@
     <img class="split-page" id="surprised-dog" src="res/surprised-dog.png">
   </div>
 
-  <div class="step slide" data-x="9000" data-y="-1500">
+  <div class="step slide" data-x="3000" data-y="-400" data-z="-500" data-rotate-x="90" data-rotate-z="90">
     <h1>The Application that we are developing today</h1>
     <img id="shopping-cart-image" src="res/shopping-cart.jpg">
   </div>
 
-  <div class="step slide" data-x="10000" data-y="-1500">
+  <div class="step slide" data-x="3000" data-y="400" data-z="-500" data-rotate-x="270" data-rotate-z="90">
     <h1>The User Stories for the application</h1>
   </div>
 
-  <div class="step slide" data-x="11000" data-y="-1500">
+  <div class="step" data-x="1500" data-y="0" data-z="-3000" data-rotate-y="180">
     <h1>Feel the source, Luke!</h1>
     <img id="yoda-image" src="res/yoda.png">
-    <code class="face1">
-      #! python<br>
-      <br>
-      # Fibonacci series:<br>
-      # the sum of two elements defines the next<br>
-      a, b = 0, 1<br>
-      while b < 200:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
-    </code>
-    <code class="face2">
-      #! python<br>
-      <br>
-      # operator for:<br>
-      # Measure some strings:<br>
-      a = ['cat', 'window', 'defenestrate']<br>
-      for x in a:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;print x, len(x)<br>
-    </code>
-    <code class="face3">
-      #! python<br>
-      <br>
-      # range function<br>
-      print range(10)<br>
-      print range(5, 10)<br>
-      print range(0, 10, 3)<br>
-      a = ['Mary', 'had', 'a', 'little', 'lamb']<br>
-      for i in range(len(a)):<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;print i, a[i]<br>
-    </code>
-    <code class="face4">
-      #! python<br>
-      <br>
-      # break operator<br>
-      # prime numbers<br>
-      for n in range(2, 1000):<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;for x in range(2, n):<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % x == 0:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'equals', x, '*', n/x<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# loop fell through without finding a factor<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'is a prime number'<br>
-    </code>
-    <code class="face5">
-      #! python<br>
-      <br>
-      # Defining Functions<br>
-      def fib(n):    # write Fibonacci series up to n<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;"""Print a Fibonacci series up to n."""<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;while b < n:<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<br>
-      # Now call the function we just defined:<br>
-      fib(2000)<br>
-    </code>
-    <code class="face6">
-      #! python<br>
-      <br>
-      # random<br>
-      import random<br>
-      print random.choice(['apple', 'pear', 'banana'])<br>
-      print random.sample(xrange(100), 10)   # sampling without replacement<br>
-      print random.random()    # random float<br>
-      print random.randrange(6)    # random integer chosen from range(6)<br>
-    </code>
+    <!--<code class="face1">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# Fibonacci series:<br>-->
+      <!--# the sum of two elements defines the next<br>-->
+      <!--a, b = 0, 1<br>-->
+      <!--while b < 200:<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>-->
+    <!--</code>-->
+    <!--<code class="face2">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# operator for:<br>-->
+      <!--# Measure some strings:<br>-->
+      <!--a = ['cat', 'window', 'defenestrate']<br>-->
+      <!--for x in a:<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;print x, len(x)<br>-->
+    <!--</code>-->
+    <!--<code class="face3">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# range function<br>-->
+      <!--print range(10)<br>-->
+      <!--print range(5, 10)<br>-->
+      <!--print range(0, 10, 3)<br>-->
+      <!--a = ['Mary', 'had', 'a', 'little', 'lamb']<br>-->
+      <!--for i in range(len(a)):<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;print i, a[i]<br>-->
+    <!--</code>-->
+    <!--<code class="face4">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# break operator<br>-->
+      <!--# prime numbers<br>-->
+      <!--for n in range(2, 1000):<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;for x in range(2, n):<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % x == 0:<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'equals', x, '*', n/x<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# loop fell through without finding a factor<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'is a prime number'<br>-->
+    <!--</code>-->
+    <!--<code class="face5">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# Defining Functions<br>-->
+      <!--def fib(n):    # write Fibonacci series up to n<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;"""Print a Fibonacci series up to n."""<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;while b < n:<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>-->
+      <!--&nbsp;&nbsp;&nbsp;&nbsp;<br>-->
+      <!--# Now call the function we just defined:<br>-->
+      <!--fib(2000)<br>-->
+    <!--</code>-->
+    <!--<code class="face6">-->
+      <!--#! python<br>-->
+      <!--<br>-->
+      <!--# random<br>-->
+      <!--import random<br>-->
+      <!--print random.choice(['apple', 'pear', 'banana'])<br>-->
+      <!--print random.sample(xrange(100), 10)   # sampling without replacement<br>-->
+      <!--print random.random()    # random float<br>-->
+      <!--print random.randrange(6)    # random integer chosen from range(6)<br>-->
+    <!--</code>-->
   </div>
 
 
