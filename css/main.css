@@ -1,0 +1,299 @@
+/*
+    The reset by Eric Meyer http://meyerweb.com/eric/tools/css/reset/
+    Copied from impress.js Github
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+    Copied the background gradient from impress.js again just changed the color
+*/
+body {
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background: rgb(215, 215, 215);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(82, 94, 108)));
+  background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(82, 94, 108));
+  background: -moz-radial-gradient(rgb(240, 240, 240), rgb(82, 94, 108));
+  background: -ms-radial-gradient(rgb(240, 240, 240), rgb(82, 94, 108));
+  background: -o-radial-gradient(rgb(240, 240, 240), rgb(82, 94, 108));
+  background: radial-gradient(rgb(240, 240, 240), rgb(82, 94, 108));
+}
+
+/*
+    Again from impress.js got som of  the default styles for text
+*/
+b, strong {
+  font-weight: bold
+}
+
+i, em {
+  font-style: italic
+}
+
+/*
+    ... same, copying for anchor tag too
+*/
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.1em;
+  background: rgba(76, 76, 76, 0.33);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.9);
+  border-radius: 0.2em;
+
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover,
+a:focus {
+  background: rgba(69, 69, 69, 0.35);
+  text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
+}
+
+/*
+    ... and copied! ...
+*/
+
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  font-family: 'PT Serif', georgia, serif;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+/*
+    Copied ...
+*/
+.impress-enabled .step {
+  margin: 0;
+  opacity: 0.3;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.impress-enabled .step.active {
+  opacity: 1
+}
+
+/*
+    ... this too, may be changed some colors
+*/
+.slide {
+  display: block;
+
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+
+  background-color: rgba(3, 3, 3, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+  color: rgb(179, 179, 179);
+  text-shadow: 0 2px 2px rgba(192, 192, 192, 0.1);
+
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+.slide q {
+  display: block;
+  font-size: 50px;
+  line-height: 72px;
+
+  margin-top: 100px;
+}
+
+.slide q strong {
+  white-space: nowrap;
+}
+
+/*
+    And now I'll try to do everything on my own
+    of course I'll refer to the way its done in impress.js
+*/
+
+#title {
+  padding: 50px;
+}
+
+#title h2 {
+  font-size: 50px;
+  line-height: normal;
+  text-align: center;
+}
+
+#title h3 {
+  text-align: center;
+}
+
+.slide img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title img {
+  width: 400px;
+}
+
+.slide h1 {
+  font-size: 50px;
+  text-align: center;
+  line-height: normal;
+}
+
+.slide h5 {
+  text-align: center;
+}
+
+.slide ol {
+  padding: 50px;
+  line-height: 50px;
+  list-style-type: katakana;
+}
+
+.slide ul {
+  padding: 50px;
+  line-height: 50px;
+  list-style-type: circle;
+}
+
+#guido-name {
+  text-align: center;
+}
+
+#guido-image {
+  width: 550px;
+}
+
+#title-not-the-snake {
+  padding-top: 20px;
+}
+
+.slide video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#monty-image {
+  width: 350px;
+}
+
+.slide code {
+  font-family: "Courier 10 Pitch", monospace;
+  font-size: large;
+  display: block;
+}
+
+#cheese-shop-code {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.split-page {
+  float: left;
+}
+
+.micro-link {
+  font-size: small;
+  vertical-align: bottom;
+}
+
+#python-philosophy {
+  font-size: small;
+  line-height: 25px;
+}
+
+#surprised-dog {
+  padding-top: 100px;
+  width: 300px;
+  padding-left: 30px;
+  float: left;
+}
+
+#title-for-java {
+  padding-top: 100px;
+}
+
+#yoda-image {
+  padding-top: 100px;
+  float: left;
+}
+
+#shopping-cart-image {
+  padding-top: 100px;
+  width: 600px;
+}

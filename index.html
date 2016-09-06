@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn Python by developing an application with TDD</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="impress">
+
+  <div id="title" class="step slide" data-x="-1000" data-y="-1500">
+    <h2>Learn Python by developing an application with TDD</h2>
+    <h3>Using Python Unit Testing Framework</h3>
+    <img src="res/Python_molurus_molurus_2.jpg">
+  </div>s
+
+  <div id="agenda" class="step slide" data-x="0" data-y="-1500">
+    <h1>Things we will be doing today</h1>
+    <ol>
+      <li>A very short introduction to Python</li>
+      <li>A very short introduction to Python</li>
+      <li>A very short introduction to Python</li>
+      <li>A very short introduction to Python</li>
+      <li>A very short introduction to Python</li>
+    </ol>
+  </div>
+
+  <div id="invented-by" class="step slide" data-x="1000" data-y="-1500">
+    <h1>Python was Invented by</h1>
+    <p id="guido-name">Guido van Rossum</p>
+    <img id="guido-image" src="res/guidovanrossum.jpg">
+  </div>
+
+  <div id="snake-slide" class="step slide" data-x="2000" data-y="-1500">
+    <h1>The name Python was inspired by</h1>
+    <h5 id="title-not-the-snake">Not the snake</h5>
+    <video id="snake-video" width="320" height="240" loop>
+      <source src="res/Burmesepython-tobudobutsuen-2012.ogv">
+    </video>
+    <h5>Monty Python (a.k.a. The Pythons)</h5>
+    <img id="monty-image" src="res/Flyingcircus_2.jpg">
+  </div>
+
+  <div class="step slide" data-x="3000" data-y="-1500">
+    <h1>And the Cheese Shop</h1>
+    <h5>a. k. a. PyPI (Python Package Index)</h5>
+    <img src="res/cheeseshop.jpg">
+    <div id="cheese-shop-code">
+      <code>
+        $ pip install package-name # for normal user or virtualenv
+      </code>
+      <br>
+      or
+      <br>
+      <code>
+        $ sudo pip install package # for global install
+      </code>
+    </div>
+  </div>
+
+  <div class="step slide" data-x="4000" data-y="-1500">
+    <h1>What is Python?</h1>
+    <h5>Python is..</h5>
+    <div class="split-page">
+      <ol>
+        <li>interpreted</li>
+        <li>object-oriented</li>
+        <li>multi-paradigm</li>
+        <li>high-level</li>
+        <li>extensible</li>
+        <li>dynamic</li>
+      </ol>
+    </div>
+    <div class="split-page">
+      <ol>
+        <li>simple</li>
+        <li>easy to learn</li>
+        <li>free and open source</li>
+        <li>general purpose</li>
+      </ol>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <a class="micro-link" href="https://www.python.org/doc/essays/blurb/">Reference for this slide</a>
+  </div>
+
+  <div class="step slide" data-x="5000" data-y="-1500">
+    <h1>Python is used by</h1>
+    <div class="split-page">
+      <ol>
+        <li>Yahoo</li>
+        <li>Google</li>
+        <li>CERN</li>
+        <li>NASA</li>
+        <li>Civilization 4</li>
+        <li>Quake Army Knife</li>
+        <li>Walt Disney</li>
+      </ol>
+    </div>
+    <div class="split-page">
+      <ol>
+        <li>Blender 3D</li>
+        <li>Shopzilla</li>
+        <li>National Weather Service</li>
+        <li>Biosoft</li>
+        <li>Red Hat</li>
+        <li>IBM</li>
+        <li>USA CIA</li>
+      </ol>
+    </div>
+    <a class="micro-link" href="https://wiki.python.org/moin/OrganizationsUsingPython">Reference for this slide</a>
+  </div>
+
+  <div class="step slide" data-x="6000" data-y="-1500">
+    <h1>Python is used for</h1>
+    <div>
+      <ol>
+        <li>Education(Learning programming)</li>
+        <li>Web Development</li>
+        <li>Scientific and numeric Computing</li>
+        <li>Desktop GUIs</li>
+        <li>General Purpose Software Development</li>
+        <li>Game Development</li>
+        <li>Writing Automation Scripts</li>
+      </ol>
+    </div>
+    <a class="micro-link" href="https://www.python.org/about/apps/">Reference for this slide</a>
+  </div>
+
+  <div class="step slide" data-x="7000" data-y="-1500">
+    <h1>Python Philosophy</h1>
+    <code id="python-philosophy">
+      >>> import this<br>
+      The Zen of Python, by Tim Peters<br>
+      <br>
+      Beautiful is better than ugly.<br>
+      Explicit is better than implicit.<br>
+      Simple is better than complex.<br>
+      Complex is better than complicated.<br>
+      Flat is better than nested.<br>
+      Sparse is better than dense.<br>
+      Readability counts.<br>
+      Special cases aren't special enough to break the rules.<br>
+      Although practicality beats purity.<br>
+      Errors should never pass silently.<br>
+      Unless explicitly silenced.<br>
+      In the face of ambiguity, refuse the temptation to guess.<br>
+      There should be one-- and preferably only one --obvious way to do it.<br>
+      Although that way may not be obvious at first unless you're Dutch.<br>
+      Now is better than never.<br>
+      Although never is often better than *right* now.<br>
+      If the implementation is hard to explain, it's a bad idea.<br>
+      If the implementation is easy to explain, it may be a good idea.<br>
+      Namespaces are one honking great idea -- let's do more of those!<br>
+    </code>
+  </div>
+
+  <div class="step slide" data-x="8000" data-y="-1500">
+    <h1>Hello World!</h1>
+    <div class="split-page">
+      <h5 id="title-for-java">For Java</h5>
+      <code>
+        class HelloWorld {<br>
+        &nbsp;&nbsp;public static void main(String [] args) {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World");<br>
+        &nbsp;&nbsp;}<br>
+        }
+      </code>
+      <h5 id="title-for-python">For Python</h5>
+      <code>
+        print ("Hello World")
+      </code>
+    </div>
+    <img class="split-page" id="surprised-dog" src="res/surprised-dog.png">
+  </div>
+
+  <div class="step slide" data-x="9000" data-y="-1500">
+    <h1>The Application that we are developing today</h1>
+    <img id="shopping-cart-image" src="res/shopping-cart.jpg">
+  </div>
+
+  <div class="step slide" data-x="10000" data-y="-1500">
+    <h1>The User Stories for the application</h1>
+  </div>
+
+  <div class="step slide" data-x="11000" data-y="-1500">
+    <h1>Feel the source, Luke!</h1>
+    <img id="yoda-image" src="res/yoda.png">
+    <code class="face1">
+      #! python<br>
+      <br>
+      # Fibonacci series:<br>
+      # the sum of two elements defines the next<br>
+      a, b = 0, 1<br>
+      while b < 200:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
+    </code>
+    <code class="face2">
+      #! python<br>
+      <br>
+      # operator for:<br>
+      # Measure some strings:<br>
+      a = ['cat', 'window', 'defenestrate']<br>
+      for x in a:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print x, len(x)<br>
+    </code>
+    <code class="face3">
+      #! python<br>
+      <br>
+      # range function<br>
+      print range(10)<br>
+      print range(5, 10)<br>
+      print range(0, 10, 3)<br>
+      a = ['Mary', 'had', 'a', 'little', 'lamb']<br>
+      for i in range(len(a)):<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print i, a[i]<br>
+    </code>
+    <code class="face4">
+      #! python<br>
+      <br>
+      # break operator<br>
+      # prime numbers<br>
+      for n in range(2, 1000):<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;for x in range(2, n):<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % x == 0:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'equals', x, '*', n/x<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# loop fell through without finding a factor<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'is a prime number'<br>
+    </code>
+    <code class="face5">
+      #! python<br>
+      <br>
+      # Defining Functions<br>
+      def fib(n):    # write Fibonacci series up to n<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;"""Print a Fibonacci series up to n."""<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;while b < n:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<br>
+      # Now call the function we just defined:<br>
+      fib(2000)<br>
+    </code>
+    <code class="face6">
+      #! python<br>
+      <br>
+      # random<br>
+      import random<br>
+      print random.choice(['apple', 'pear', 'banana'])<br>
+      print random.sample(xrange(100), 10)   # sampling without replacement<br>
+      print random.random()    # random float<br>
+      print random.randrange(6)    # random integer chosen from range(6)<br>
+    </code>
+  </div>
+
+
+</div>
+<script src="js/impress.min.js"></script>
+<script src="js/main.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
