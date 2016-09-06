@@ -188,74 +188,76 @@
   <div class="step" data-x="1500" data-y="0" data-z="-3000" data-rotate-y="180">
     <h1>Feel the source, Luke!</h1>
     <img id="yoda-image" src="res/yoda.png">
-    <!--<code class="face1">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# Fibonacci series:<br>-->
-      <!--# the sum of two elements defines the next<br>-->
-      <!--a, b = 0, 1<br>-->
-      <!--while b < 200:<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>-->
-    <!--</code>-->
-    <!--<code class="face2">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# operator for:<br>-->
-      <!--# Measure some strings:<br>-->
-      <!--a = ['cat', 'window', 'defenestrate']<br>-->
-      <!--for x in a:<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;print x, len(x)<br>-->
-    <!--</code>-->
-    <!--<code class="face3">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# range function<br>-->
-      <!--print range(10)<br>-->
-      <!--print range(5, 10)<br>-->
-      <!--print range(0, 10, 3)<br>-->
-      <!--a = ['Mary', 'had', 'a', 'little', 'lamb']<br>-->
-      <!--for i in range(len(a)):<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;print i, a[i]<br>-->
-    <!--</code>-->
-    <!--<code class="face4">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# break operator<br>-->
-      <!--# prime numbers<br>-->
-      <!--for n in range(2, 1000):<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;for x in range(2, n):<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % x == 0:<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'equals', x, '*', n/x<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# loop fell through without finding a factor<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'is a prime number'<br>-->
-    <!--</code>-->
-    <!--<code class="face5">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# Defining Functions<br>-->
-      <!--def fib(n):    # write Fibonacci series up to n<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;"""Print a Fibonacci series up to n."""<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;while b < n:<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>-->
-      <!--&nbsp;&nbsp;&nbsp;&nbsp;<br>-->
-      <!--# Now call the function we just defined:<br>-->
-      <!--fib(2000)<br>-->
-    <!--</code>-->
-    <!--<code class="face6">-->
-      <!--#! python<br>-->
-      <!--<br>-->
-      <!--# random<br>-->
-      <!--import random<br>-->
-      <!--print random.choice(['apple', 'pear', 'banana'])<br>-->
-      <!--print random.sample(xrange(100), 10)   # sampling without replacement<br>-->
-      <!--print random.random()    # random float<br>-->
-      <!--print random.randrange(6)    # random integer chosen from range(6)<br>-->
-    <!--</code>-->
+    <div class="cubespinner">
+      <div class="face1">
+        #! python<br>
+        <br>
+        # Fibonacci series:<br>
+        # the sum of two elements defines the next<br>
+        a, b = 0, 1<br>
+        while b < 200:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
+      </div>
+      <div class="face2">
+        #! python<br>
+        <br>
+        # operator for:<br>
+        # Measure some strings:<br>
+        a = ['cat', 'window', 'defenestrate']<br>
+        for x in a:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;print x, len(x)<br>
+      </div>
+      <div class="face3">
+        #! python<br>
+        <br>
+        # range function<br>
+        print range(10)<br>
+        print range(5, 10)<br>
+        print range(0, 10, 3)<br>
+        a = ['Mary', 'had', 'a', 'little', 'lamb']<br>
+        for i in range(len(a)):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;print i, a[i]<br>
+      </div>
+      <div class="face4">
+        #! python<br>
+        <br>
+        # break operator<br>
+        # prime numbers<br>
+        for n in range(2, 1000):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;for x in range(2, n):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % x == 0:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'equals', x, '*', n/x<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# loop fell through without finding a factor<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print n, 'is a prime number'<br>
+      </div>
+      <div class="face5">
+        #! python<br>
+        <br>
+        # Defining Functions<br>
+        def fib(n):    # write Fibonacci series up to n<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"""Print a Fibonacci series up to n."""<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;a, b = 0, 1<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;while b < n:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print b,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a, b = b, a+b<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<br>
+        # Now call the function we just defined:<br>
+        fib(2000)<br>
+      </div>
+      <div class="face6">
+        #! python<br>
+        <br>
+        # random<br>
+        import random<br>
+        print random.choice(['apple', 'pear', 'banana'])<br>
+        print random.sample(xrange(100), 10)   # sampling without replacement<br>
+        print random.random()    # random float<br>
+        print random.randrange(6)    # random integer chosen from range(6)<br>
+      </div>
+    </div>
   </div>
 
 
