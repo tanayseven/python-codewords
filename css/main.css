@@ -252,7 +252,7 @@ a:focus {
   width: 350px;
 }
 
-.slide code {
+.slide code, .step code {
   font-family: "Courier 10 Pitch", monospace;
   font-size: large;
   display: block;
@@ -298,115 +298,87 @@ a:focus {
   width: 600px;
 }
 
+#yoda-code {
+  font-size: 25px;
+  padding-left: 400px;
+}
+
 /*
-  Shamelessly copied the following from this site
-  http://www.the-art-of-web.com/css/3d-transforms/
+  Finally I'm writing my own animation
 */
 
-@-webkit-keyframes spincube {
-  from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
-  16%      { -webkit-transform: rotateY(-90deg);                           }
-  33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);            }
-  50%      { -webkit-transform: rotateY(-180deg) rotateZ(90deg);           }
-  66%      { -webkit-transform: rotateY(-270deg) rotateX(90deg);           }
-  83%      { -webkit-transform: rotateX(90deg);                            }
-}@keyframes spincube {
-   from,to {
-     -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-     -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-   }
-   16% {
-     -moz-transform: rotateY(-90deg);
-     -ms-transform: rotateY(-90deg);
-     transform: rotateY(-90deg);
-   }
-   33% {
-     -moz-transform: rotateY(-90deg) rotateZ(90deg);
-     -ms-transform: rotateY(-90deg) rotateZ(90deg);
-     transform: rotateY(-90deg) rotateZ(90deg);
-   }
-   50% {
-     -moz-transform: rotateY(-180deg) rotateZ(90deg);
-     -ms-transform: rotateY(-180deg) rotateZ(90deg);
-     transform: rotateY(-180deg) rotateZ(90deg);
-   }
-   66% {
-     -moz-transform: rotateY(-270deg) rotateX(90deg);
-     -ms-transform: rotateY(-270deg) rotateX(90deg);
-     transform: rotateY(-270deg) rotateX(90deg);
-   }
-   83% {
-     -moz-transform: rotateX(90deg);
-     -ms-transform: rotateX(90deg);
-     transform: rotateX(90deg);
-   }
- }
-.cubespinner{
-  -webkit-animation-name:spincube;
-  -webkit-animation-timing-function:ease-in-out;
-  -webkit-animation-iteration-count:infinite;
-  -webkit-animation-duration:12s;
-  animation-name:spincube;
-  animation-timing-function:ease-in-out;
-  animation-iteration-count:infinite;
-  animation-duration:12s;
-  -webkit-transform-style:preserve-3d;
-  -moz-transform-style:preserve-3d;
-  -ms-transform-style:preserve-3d;
-  transform-style:preserve-3d;
-  -webkit-transform-origin:60px 60px 0;
-  -moz-transform-origin:60px 60px 0;
-  -ms-transform-origin:60px 60px 0;
-  transform-origin:60px 60px 0}
-.cubespinner div{
-  position:absolute;
-  margin-left: 500px;
-  width:120px;
-  height:120px;
-  border:1px solid #ccc;
-  background:rgba(255,255,255,.8);
-  box-shadow:inset 0 0 20px rgba(0,0,0,.2);
-  text-align:left;
-  font-size:5px
+.floating-1 {
+  display: inline-block;
+  animation: floating1 5s infinite;
+  -webkit-animation: floating1 5s infinite;
+  -moz-animation: floating1 5s infinite;
+  -ms-animation: floating1 5s infinite;
+  -o-animation: floating1 5s infinite;
 }
-.cubespinner .face1{
-  -webkit-transform:translateZ(60px);
-  -moz-transform:translateZ(60px);
-  -ms-transform:translateZ(60px);
-  transform:translateZ(60px)
+
+.floating-2 {
+  display: inline-block;
+  display: inline-block;
+  animation: floating2 5s infinite;
+  -webkit-animation: floating2 5s infinite;
+  -moz-animation: floating2 5s infinite;
+  -ms-animation: floating2 5s infinite;
+  -o-animation: floating2 5s infinite;
 }
-.cubespinner .face2{
-  -webkit-transform:rotateY(90deg) translateZ(60px);
-  -moz-transform:rotateY(90deg) translateZ(60px);
-  -ms-transform:rotateY(90deg) translateZ(60px);
-  transform:rotateY(90deg) translateZ(60px)
+
+.floating-3 {
+  display: inline-block;
+  animation: floating3 5s infinite;
+  -webkit-animation: floating3 5s infinite;
+  -moz-animation: floating3 5s infinite;
+  -ms-animation: floating3 5s infinite;
+  -o-animation: floating3 5s infinite;
 }
-.cubespinner .face3{
-  -webkit-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-  -moz-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-  -ms-transform:rotateY(90deg) rotateX(90deg) translateZ(60px);
-  transform:rotateY(90deg) rotateX(90deg) translateZ(60px)
+
+.rotate-1 {
+  display: inline-block;
+  animation: rotate1 5s infinite;
+  -webkit-animation: rotate1 5s infinite;
+  -moz-animation: rotate1 5s infinite;
+  -ms-animation: rotate1 5s infinite;
+  -o-animation: rotate1 5s infinite;
 }
-.cubespinner .face4{
-  -webkit-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-  -moz-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-  -ms-transform:rotateY(180deg) rotateZ(90deg) translateZ(60px);
-  transform:rotateY(180deg) rotateZ(90deg) translateZ(60px)
+
+.rotate-2 {
+  display: inline-block;
+  animation: rotate2 5s infinite;
+  -webkit-animation: rotate2 5s infinite;
+  -moz-animation: rotate2 5s infinite;
+  -ms-animation: rotate2 5s infinite;
+  -o-animation: rotate2 5s infinite;
 }
-.cubespinner .face5{
-  -webkit-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-  -moz-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-  -ms-transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px);
-  transform:rotateY(-90deg) rotateZ(90deg) translateZ(60px)
+
+@keyframes floating1 {
+  50% {transform: translateY(-20px);}
 }
-.cubespinner .face6{
-  -webkit-transform:rotateX(-90deg) translateZ(60px);
-  -moz-transform:rotateX(-90deg) translateZ(60px);
-  -ms-transform:rotateX(-90deg) translateZ(60px);
-  transform:rotateX(-90deg) translateZ(60px)
+
+@keyframes floating2 {
+  15% {transform: translateY(-5px);}
+  25% {transform: translateY(-10px);}
+  50% {transform: translateY(-5);}
+  75% {transform: translateY(0);}
+  85% {transform: translateY(5);}
 }
-.face1 and .face2 and .face3 and .face4 and .face5 and .face6 {
-  padding-left: 5px;
-  padding-top: 5px;
+
+@keyframes floating3 {
+  15% {transform: translateX(5px) translateY(-5px);}
+  25% {transform: translateX(10px) translateY(-10px);}
+  50% {transform: translateX(20px) translateY(-5);}
+  75% {transform: translateX(0px) translateY(0);}
+  85% {transform: translateX(-5px) translateY(5);}
+}
+
+@keyframes rotate1 {
+  50% {transform: rotateY(180deg) translateX(50px); }
+  100% {transform-origin: right; transform: rotateY(360deg);}
+}
+
+@keyframes rotate2 {
+  50% {transform: rotateY(180deg) translateX(150px);}
+  100% {transform-origin: left; transform: rotateY(360deg);}
 }
