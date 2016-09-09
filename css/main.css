@@ -204,8 +204,13 @@ a:focus {
   margin-right: auto;
 }
 
-#title-slide img {
-  width: 400px;
+.sub-title {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.bio {
+  padding-top: 50px;
 }
 
 .slide h1 {
