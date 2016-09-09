@@ -303,17 +303,20 @@ a:focus {
   width: 600px;
 }
 
-table, th, td {
-  border: 1px solid rgba(180, 180, 180, 0.7);
-  font-size: 15px;
-  padding: 1px;
-  text-align: center;
-  margin-left: 2px;
-  margin-right: 2px;
+#user-stories {
+  font-size: 20px;
 }
 
-th {
-  font-weight: bold;
+#user-stories ol{
+  padding-top: 30px;
+  line-height: 25px;
+  list-style-type: decimal;
+}
+
+.term {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 22px;
 }
 
 #yoda-code {
